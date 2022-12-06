@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <style>
+          * {
+               margin: 0;
+          }
+          body { /* Body Properties */
+               background: linear-gradient(to bottom right, rgba(235, 18, 94, 0.82), rgb(237, 237, 237), rgba(0, 255, 255, 0.64), rgba(0, 0, 255, 0.483), rgba(255, 0, 0, 0.245));
+               background-size: cover;
+               background-repeat: no-repeat;
+               height: 100vh;
+               font-family: sans-serif;
+          }
+          .form { /* Form Box properties */
+               max-width: 380px;
+               height: 450px;
+               padding-top: 20px;
+               padding-left: 20px;
+               padding-right: 45px;
+               padding-bottom: 20px;
+               margin-left: auto;
+               margin-right: auto;
+               box-shadow: 1px 1px 25px 3px rgba(0, 0, 0, 0.322);
+               border-radius: 20px;
+          }
+          /* Other */
+          .name {
+               height: 40px;
+               padding-left: 10px;
+               padding-right: 10px;
+               width: 100%;
+               border-radius: 5px;
+               border: 1px solid grey;
+          }
+          #msg {
+               width: 100%;
+               max-width: 100%;
+               outline: none;
+               padding-left: 10px;
+               padding-right: 10px;
+               border: 1px solid grey;
+               border-radius: 10px;
+               padding-top: 20px;
+               padding-bottom: 20px;
+               height: 110px;
+          }
+          input {
+               outline: none;
+          }
+          .form button {
+               background-color: rgb(0, 68, 255);
+               padding-left: 30px;
+               padding-right: 30px;
+               height: 35px;
+               border: none;
+               border-radius: 8px;
+               color: white;
+               margin-top: 10px;
+               cursor: pointer;
+          }
+          /* Make responsive */
+          @media only screen and (max-width: 470px) {
+               .form {
+                    margin-left: 20px;
+                    margin-right: 20px;
+               }
+          }
+     </style>
+</head>
+<body>
+     <br><br><br><br>
+     <form action="">
+          <div class="form">
+               <label style="color: grey; font-size: 13px; margin-left: 5px;">First name</label>
+               <br><br>
+               <input type="text" value="" class="name" placeholder="First Name" name="">
+               <br><br>
+               <label style="color: grey; font-size: 13px; margin-left: 5px;">Last Name</label>
+               <br><br>
+               <input type="text" value="" class="name" placeholder="Last Name" name="">
+               <br><br>
+               <label style="color: grey; font-size: 13px; margin-left: 5px;">Message</label>
+               <br><br>
+               <textarea name="" id="msg" cols="30" rows="10"></textarea>
+               <br>
+               <button type="submit">Submit</button>
+          </div>
+     </form>
+</body>
+</html>
